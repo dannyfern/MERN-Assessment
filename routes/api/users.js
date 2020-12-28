@@ -1,7 +1,9 @@
 const express = require('express');
 const { check, validationResult } = require('express-validator');
 const router = express.Router();
+const config = require('config');
 const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
 const gravatar = require ('gravatar');
 const User = require('../../models/User');
 
@@ -57,14 +59,28 @@ router.post('/',
         // SAVE THE USER TO THE DB
         await user.save();
 
-        // WELCOME HOME MESSAGE, USER SIGN UP SUCCESSFUL IN THIS TRY BLOCK!
-        res.send('User Registration Successful, Welcome Home!');
+        //JSON WEB TOKEN FROM USER ID
+        const send = {
+            user: {
+                id: user.id
+            }
+        }
+
+        jwt.sign(send, config.get('jwtsign'),
+                { expiresIn: 560000},
+                (err, token) => {
+                    if(err) throw err;
+                    res.json({ token })
+                });
         
         // CATCHING ANY ERRORS ABOVE AND SENDING A SERVER ERROR IN SAVING TO THE DB
     } catch(err) {
         console.error(err.message);
         res.status(500).send('Opps, something went wrong with saving your profile :(...');
     }
+
+    // WELCOME HOME MESSAGE, USER SIGN UP SUCCESSFUL IN THIS TRY BLOCK!
+        // res.send('User Registration Successful, Welcome Home!');
 
 });
 

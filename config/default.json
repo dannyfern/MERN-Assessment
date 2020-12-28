@@ -1,3 +1,4 @@
 {
+    "jwtsign": "meikdan", 
     "mongoURI": "mongodb+srv://Daniel:password000@mernproject.eoosq.mongodb.net/<dbname>?retryWrites=true&w=majority"
 }

@@ -79,9 +79,6 @@ router.post('/',
         res.status(500).send('Opps, something went wrong with saving your profile :(...');
     }
 
-    // WELCOME HOME MESSAGE, USER SIGN UP SUCCESSFUL IN THIS TRY BLOCK!
-        // res.send('User Registration Successful, Welcome Home!');
-
 });
 
 module.exports = router;

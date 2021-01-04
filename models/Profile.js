@@ -58,22 +58,18 @@ const ProfileSchema = new mongoose.Schema({
 //---------------------------------------------------------
 currentroles: [
     {
-        title: {
+        jobtitle: {
             type: String,
             required: false,
         },
-        company: {
+        business: {
             type: String,
             required: false,
         },
-        startdate: {
-            type: Date,
+        location: {
+            type: String,
             required: false
         },
-        enddate: {
-            type: Date,
-            required: false
-        }
     }],
 //----------------------------------------------------------
 pastroles: [
@@ -87,11 +83,11 @@ pastroles: [
             required: false,
         },
         startdate: {
-            type: Date,
+            type: Date,  default: Date.now,
             required: false
         },
         enddate: {
-            type: Date,
+            type: Date,  default: Date.now,
             required: false
         }
     }],
@@ -103,7 +99,7 @@ pastroles: [
 //-------------------------------------------------------------
     qualifications: [
     {
-        insitution: {
+        institution: {
             type: String,
             required: false,
         },
@@ -121,28 +117,28 @@ pastroles: [
         }
     }],
 //--------------------------------------------------------------
-    previouseducation: [
-    {
-        school: {
-            type: String,
-            required: false,
-        }, 
-        degree: {
-            type: String,
-            required: false,
-        },
-        startdate: {
-            type:Date,
-            required: false,
-        },
-        enddate: {
-            type: Date,
-            required: false,
-    }
-    }],
+    // previouseducation: [
+    // {
+    //     school: {
+    //         type: String,
+    //         required: false,
+    //     }, 
+    //     degree: {
+    //         type: String,
+    //         required: false,
+    //     },
+    //     startdate: {
+    //         type:Date,
+    //         required: false,
+    //     },
+    //     enddate: {
+    //         type: Date,
+    //         required: false,
+    // }
+    // }],
 //-------------------------------------------------------------
-    socials: {
-
+    socials: [
+        {
         linkedin: { 
             type:String,
             required: false,
@@ -155,11 +151,11 @@ pastroles: [
             type: String,
             required: false,
         },
-        Facebook: {
+        facebook: {
             type: String,
             required: false,
         },
-    },
+    }],
 //-------------------------------------------------------------
     portfolio: [
         {

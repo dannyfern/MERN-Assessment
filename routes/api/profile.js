@@ -44,7 +44,7 @@ router.post('/', [auth,
             interests,
             languages,
             experiencelevel,
-            yearsofexperience
+            yearsofexperience,
         } = req.body;
 
         // Requiring profile fields so that they can be initialized ------------------------
@@ -68,6 +68,7 @@ router.post('/', [auth,
         if(languages) {
             profileFields.languages = languages.split(',').map(languages => languages.trim());
         };
+
         // FIND THE PROFILE BU USER ID AND UPDATE IT BASED ON USER INPUT ----------------
         try {
             let profile = await Profile.findOne({ user: req.user.id });
@@ -131,6 +132,209 @@ router.delete('/', auth, async (req, res) => {
     } catch (err) {
         console.error(err.message);
         res.status(500).send('Error from server');
+    }
+});
+
+// SCHEMA FOR THE EXPERIENCE OF THE USER api/profile/experience ------------------------------------------------------
+router.put('/experience', 
+    [auth, 
+    [
+        check('title', 'Title is a required field')
+        .not().isEmpty(),
+        check('company', 'Company is a required field')
+        .not().isEmpty()
+    ] 
+],
+async (req, res) => {
+    const errors = validationResult(req);
+    if(!errors.isEmpty()) {
+        return res.status(400).json({ errors: errors.array() });
+    }
+
+const {
+    jobtitle,
+    business,
+    location,
+    title,
+    company,
+    startdate,
+    enddate
+} = req.body;
+
+const currentExp = {
+    jobtitle,
+    business,
+    location,
+}
+const pastExp = {
+    title,
+    company,
+    startdate,
+    enddate,
+}
+// DELETE EXPERIENCE BY ID ---------------------------------------------------
+try {
+    const profile = await Profile.findOne({ user: req.user.id });
+
+    profile.currentroles.unshift(currentExp);
+    profile.pastroles.unshift(pastExp)
+
+    await profile.save();
+
+    res.json(profile);
+} catch (err) {
+    console.error(err.message);
+    res.status(500).send('Server Error');
+}
+});
+
+// DELETE EXPERIENCE ROUTE ----------------------------------------
+router.delete('/experience/:exp_id', auth, async (req, res) => {
+    try {
+        const profile = await Profile.findOne({ user: req.user.id });
+
+        const removeCurrent = profile.currentroles
+        .map(item => item.id)
+        .indexOf(req.params.exp_id);
+
+        const removePast = profile.pastroles
+        .map(item => item.id)
+        .indexOf(req.params.exp_id);
+
+        profile.currentroles.splice(removeCurrent, 1);
+        profile.pastroles.splice(removePast, 1);
+        await profile.save();
+
+        res.json(profile);
+    } catch (err) {
+        console.error(err.message);
+        res.status(500).send('Server error');
+    }
+});
+
+// EDUCATION FOR PROFILE --------------------------------
+
+router.put('/education', 
+    [auth, 
+    [
+        check('institution', 'Institution is a required field')
+        .not().isEmpty(),
+        check('degree', 'Degree is a required field')
+        .not().isEmpty()
+    ] 
+],
+async (req, res) => {
+    const errors = validationResult(req);
+    if(!errors.isEmpty()) {
+        return res.status(400).json({ errors: errors.array() });
+    }
+
+const {
+    institution,
+    degree,
+    startdate,
+    enddate,
+} = req.body;
+
+const newEdu = {
+    institution,
+    degree,
+    startdate,
+    enddate,
+}
+// DELETE QUALIFICATIONS BY ID ----------------------------------------
+try {
+    const profile = await Profile.findOne({ user: req.user.id });
+
+    profile.qualifications.unshift(newEdu);
+
+    await profile.save();
+
+    res.json(profile);
+} catch (err) {
+    console.error(err.message);
+    res.status(500).send('Server Error');
+}
+});
+
+// DELETE QUALIFICATIONS BASED ON ID -------------------------------------
+router.delete('/education/:edu_id', auth, async (req, res) => {
+    try {
+        const profile = await Profile.findOne({ user: req.user.id });
+
+        const removeEdu = profile.qualifications
+        .map(item => item.id)
+        .indexOf(req.params.edu_id);
+
+        profile.qualifications.splice(removeEdu, 1);
+        
+        await profile.save();
+
+        res.json(profile);
+    } catch (err) {
+        console.error(err.message);
+        res.status(500).send('Server error');
+    }
+});
+
+// ---------------------- SOCIALS ROUTE --------------------------------------
+router.put('/socials', 
+    [auth, 
+    [
+        check('linkedin', 'linkedin is a required field')
+        .not().isEmpty(),
+    ] 
+],
+async (req, res) => {
+    const errors = validationResult(req);
+    if(!errors.isEmpty()) {
+        return res.status(400).json({ errors: errors.array() });
+    }
+
+const {
+    linkedin,
+    twitter,
+    instagram,
+    facebook,
+} = req.body;
+
+const newSoc = {
+    linkedin,
+    twitter,
+    instagram,
+    facebook,
+};
+
+try {
+    const profile = await Profile.findOne({ user: req.user.id });
+
+    profile.socials.unshift(newSoc);
+
+    await profile.save();
+
+    res.json(profile);
+} catch (err) {
+    console.error(err.message);
+    res.status(500).send('Server Error');
+}
+});
+
+router.delete('/socials/:soc_id', auth, async (req, res) => {
+    try {
+        const profile = await Profile.findOne({ user: req.user.id });
+
+        const removeSoc = profile.socials
+        .map(item => item.id)
+        .indexOf(req.params.soc_id);
+
+        profile.socials.splice(removeSoc, 1);
+        
+        await profile.save();
+
+        res.json(profile);
+    } catch (err) {
+        console.error(err.message);
+        res.status(500).send('Server error');
     }
 });
 

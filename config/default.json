@@ -1,4 +1,6 @@
 {
     "jwtsign": "meikdan", 
-    "mongoURI": "mongodb+srv://Daniel:password000@mernproject.eoosq.mongodb.net/<dbname>?retryWrites=true&w=majority"
+    "mongoURI": "mongodb+srv://Daniel:password000@mernproject.eoosq.mongodb.net/<dbname>?retryWrites=true&w=majority",
+    "githubClientId": "e85cd00d076805a3c7df",
+    "githubSecret": "1382836587bb4f909480a9931b48a3041011da01"
 }

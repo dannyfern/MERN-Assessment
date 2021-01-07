@@ -1,10 +1,12 @@
 import React, {useState} from 'react'
-
+import FormInput from './../reusable/FormInput'
+// use forminput component
 
 const Register = () => {
 
     const initialState = {
         email: "",
+        username: "",
         password: ""
     }
 
@@ -12,8 +14,7 @@ const Register = () => {
 
 
     function handleChange(event){
-        const name = event.target.name
-        const value = event.target.value
+        const { name, value } = event.target
         setUserDetails({
             ...userDetails,
             [name]: value
@@ -22,7 +23,7 @@ const Register = () => {
 
     function handleSubmit(event){
         event.preventDefault()
-
+        // functionality ...
     }
 
 
@@ -31,22 +32,23 @@ const Register = () => {
             <div>
 
                 <div className="heading">
-                    register
+                    <h1>Register a new account</h1>
                 </div>
                 <div className="authFormDiv">
                     <form className="authForm" onSubmit={handleSubmit}>
-                        <label>Email</label>
-                        <input 
-                            type="text"
-                            name="email"
-                            onChange={handleChange}
-                        />
-                        <label>Password</label>
-                        <input 
-                            type="text"
-                            name="password"
-                            onChange={handleChange}
-                        />
+                        <div>
+                            <label>Email</label>
+                            <FormInput name="email" onChange={handleChange} />
+                        </div>
+                        <div>
+                            <label>Username</label>
+                            <FormInput name="username" onChange={handleChange} />
+                        </div>
+                        <div>
+                            <label>Password</label>
+                            <FormInput name="password" onChange={handleChange} />
+                        </div>
+                        
                         <input
                             type="submit"
                         />

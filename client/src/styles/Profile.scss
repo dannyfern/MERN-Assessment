@@ -117,59 +117,64 @@
     }   
 
     //  deets ------------------------------------------------------------
+    
+
+    .doubleFields{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .formFields{
+            width: 48%;
+        }
+    }
+
+    .formFields{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3%;
+
+
+        .bio{
+            height: 20vh;
+            border: 1px solid $green;
+            border-radius: 3px;
+            resize: none;
+
+        }
+
+        .description{
+            height: 10vh;
+            border: 1px solid $green;
+            border-radius: 3px;
+            resize: none;
+        }
+    }
+
+    label{
+        font-weight: 500;
+    }
+
+    
+
+    input[type=text], input[type=date]{
+        border: 1px solid $green;
+        border-radius: 3px;
+        padding: 0 0.4rem;
+        height: 2em;
+
+        
+    }
 
     .profileFormSection{
         background-color: $grey;
         padding: 6% 8%;
 
 
-        label{
-            font-weight: 500;
-        }
-
         
 
-        input[type=text], input[type=date]{
-            border: 1px solid $green;
-            border-radius: 3px;
-            padding: 0 0.4rem;
-            height: 2em;
 
-            
-        }
-
-
-        .doubleFields{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-
-            .formFields{
-                width: 48%;
-            }
-        }
-
-        .formFields{
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 3%;
-
-
-            .bio{
-                height: 20vh;
-                border: 1px solid $green;
-                border-radius: 3px;
-                resize: none;
-
-            }
-
-            .description{
-                height: 10vh;
-                border: 1px solid $green;
-                border-radius: 3px;
-                resize: none;
-            }
-        }
+        
 
         .interestsSection{
             margin: 0 0 3%;
@@ -209,10 +214,23 @@
 
         }
 
-        .statusRadio > * {
-            color: red;
+        .MuiFormControl-root{
+            padding: 0 8%;
 
+            .MuiRadio-colorSecondary.Mui-checked{
+                color: $green;
+            }
+            
+            .MuiTypography-body1{
+                font-family: 'Quicksand', sans-serif;
+            }
+
+            // .radioGroupWork{
+
+            // }
         }
+
+        
     }
 
     .recentWork, .pastWork, .statusSelection{
@@ -246,16 +264,7 @@
 
             
 
-            .plusButton{
-                background-color: $green;
-                color: #fff;
-                border: none;
-                width: 100%;
-                border-radius: 3px;
-                padding: 1%;
-                margin-top: 3%;
-
-            }
+            
             
         }
         input{
@@ -269,6 +278,90 @@
     }
     
 }
+
+.plusButton{
+    background-color: $green;
+    color: #fff;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    padding: 1%;
+    margin-top: 3%;
+
+}
+
+// education
+
+.eduProfileForm{
+    
+
+    
+
+    .eduForms{
+        padding: 6% 8%;
+
+    }
+
+    .eduItemDiv{
+        padding: 5%;
+        border: 1px solid $green;
+        border-radius: 3px;
+        margin-bottom: 3%;
+
+
+
+        .eduItem{
+            list-style-type: none;
+        }
+    }
+
+
+}
+
+.greyTitle{
+    padding: 6% 8%;
+    background-color: $grey;
+}
+
+
+
+// links
+
+.linkForms{
+    padding: 6% 8%;
+    
+
+}
+
+.linkDropDown{
+    padding: 6% 8%;
+
+    .Dropdown-control, .Dropdown-menu{
+        border: 1px solid $green;
+        border-radius: 3px;
+        padding: 0.25rem;
+        color: black;
+    
+        .Dropdown-option{
+            color: black;
+            padding: 0.25rem;
+        }
+    }
+    .Dropdown-control{
+        margin: 3% 0;
+    }
+
+
+}
+
+
+// review :
+
+.reviewDivs{
+    padding: 6% 8%;
+}
+
+
 
 
 

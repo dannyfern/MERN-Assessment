@@ -30,7 +30,7 @@ const SignIn = () => {
         <div>
             <div>
                 <div className="heading">
-                    sign in
+                    <h1>Sign in to an existing account</h1>
                 </div>
                 <div className="authFormDiv">
                     <form className="authForm" onSubmit={handleSubmit}>

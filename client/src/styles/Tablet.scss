@@ -105,23 +105,89 @@
 
 
 
-    // profiles
+    // profile forms :
+
+    .profileFormDiv{
+        label{
+            font-size: 1.75rem;
+        }
+
+        h3{
+            font-size: 2rem;
+            margin-bottom: 2%;
+        }
+    }
 
     .profileFormSection{
         label{
             font-size: 1.75rem;
         }
 
-        .doubleFields{
+
+
+        
+    }
+
+    .profilePhotoUpload{
+        font-size: 2rem;
+    }
+
+    .doubleFields{
             
-            input{
-                padding: 3%;
-                font-size: 1.5rem
-            }
+        input{
+            padding: 3%;
+            font-size: 1.5rem
         }
     }
 
+    input[type=text], input[type=date]{
+        padding: 0 0.8rem;
+        height: 3em;
+        font-size: 1.5rem;
+
+        
+    }
+
+    .Dropdown-control, .Dropdown-menu{
+        padding: 1rem;
+        font-size: 1.5rem;
     
+        .Dropdown-option{
+            color: black;
+            padding: 1rem;
+        }
+    }
+    .Dropdown-control{
+        margin: 3% 0;
+    }
+
+    .formFields{
+
+        p{
+            font-size: 1.5rem;
+        }
+    }
+
+    .greyTitle{
+
+    }
+
+    .nextBtn{
+        font-size: 2rem;
+    }
+
+    .plusButton{
+        font-size: 2rem;
+    }
+
+    
+
+
+
+
+
+
+
 
     // profile display :
 

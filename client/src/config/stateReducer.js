@@ -19,6 +19,12 @@ export default function (state, action) {
                 error: action.data
             }
         }
+        case "setUserProfile": {
+            return {
+                ...state,
+                userProfile: action.data
+            }
+        }
         default:
             return state
     }

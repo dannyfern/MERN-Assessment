@@ -1,0 +1,190 @@
+@import "variables";
+
+
+// post filters
+
+.filters{
+    border: 1px solid $green;
+    border-radius: 3px;
+    padding: 4%;
+    display: none;
+    flex-direction: column;
+    width: 85vw;
+    margin: 5% auto;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+
+    p{
+        margin: 0 0 2%;
+    }
+    .Dropdown-root{
+        margin: 0 0 3%;
+    }
+    .Dropdown-control, .Dropdown-menu{
+        border: 1px solid $green;
+        border-radius: 3px;
+        padding: 0.25rem;
+        color: black;
+
+        .Dropdown-option{
+            color: black;
+            padding: 0.25rem;
+        }
+    }
+    .Dropdown-control{
+        margin: 3% 0;
+    }
+
+
+
+    .filterBtn{
+        margin-top: 4%;
+        
+
+        button{
+            background-color: $green;
+            color: white;
+            width: 100%;
+            border-radius: 3px;
+            border: none;
+            padding: 1% 0;
+            font-size: 1em;
+        }
+        
+
+    }
+}
+
+// add posts
+
+#addPostDiv{
+    margin: 3% auto;
+    width: 30vw;
+
+}
+
+#addPostForm{
+    display: flex;
+    flex-direction: column;
+
+    
+
+    .addPostField{
+        width: 100%;
+        margin-bottom: 3%;
+        
+    }
+
+    .addPostSubmit{
+        width: 10vw;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+// edit posts
+
+
+
+// posts
+
+.posts{
+    display: flex;
+    flex-direction: column;
+}
+.postCard{
+    padding: 4%;
+    border: 1px solid $green;
+    margin: 4% auto;
+    width: 85vw;
+    border-radius: 3px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+    .titleLink{
+        text-decoration: none !important;
+        .postTitle{
+            color: $green;
+            font-size: 1.75em;
+            
+        }
+    }
+
+    .postInfo{
+        h5{
+            font-weight: 500;
+            margin-top: 6%;
+            font-size: 1em;
+        }
+        h3{
+            font-weight: 300;
+            font-size: 1.5em;
+            margin-top: 3%;
+        }
+        .upVotesDiv{
+            display: flex;
+            justify-content: flex-end;
+            .upVotes{
+                color: $green;
+                font-weight: 700;
+                font-size: 1.25em;
+            }
+        }
+        
+        
+    }
+}
+
+
+// single post
+
+
+.singlePostTitle{
+    background: rgba(117, 172, 180, 0.3);
+    padding: 15% 10%;
+
+    .singleTitleLink{
+        text-align: center;
+        text-decoration: none;
+        
+
+        h1{
+            color: black;
+            font-family: $dvb;
+            font-weight: 100;
+            
+        }
+    }
+}
+
+.singlePostInfo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80vw;
+    margin: 0 auto;
+
+    h5{
+        margin: 12% 0 2%;
+        font-size: 1.25em;
+        font-weight: 400;
+    }
+    h3{
+        margin: 0 0 5%;
+        font-weight: 200;
+        font-size: 1.5em;
+
+    }
+    p{
+        margin: 3% 0;
+        font-size: 1.25em;
+        line-height: 1.5;
+
+    }
+}
+
+.authorInfo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10%;
+}

@@ -1,0 +1,216 @@
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+    .width70{
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    .heading{
+        margin: 8%;
+    }
+
+    .headingFont{
+        font-size: 3rem;
+    }
+
+
+    // post filters :
+
+    .filterText{
+        font-size: 1.5rem;
+        margin-bottom: 3%;
+    }
+
+    .filters{
+        margin: 5% auto;
+        width: 85vw;
+
+        .filterDropdowns{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .dropdownDiv{
+                width: 47%;
+            }
+        }
+
+        p{
+            font-size: 1.5rem;
+        }
+
+        .Dropdown-control, .Dropdown-menu{
+            font-size: 1.5rem;
+        }
+
+        .filterBtn{
+            font-size: 1.5rem;
+        }
+    }
+
+    // posts : 
+    .posts{
+        flex-direction: row;
+        flex-wrap: wrap;
+        .postCard{
+            flex: 40%;
+            margin: 3% 3%;
+        }
+
+        
+    }
+
+    .singlePostTitle{
+        padding: 10%;
+
+        .singleTitleLink{
+
+            h1{
+                font-size: 3em;
+            }
+        }
+    }
+
+    .singlePostInfo{
+
+        #postDate{
+            font-size: 1.75em;
+        }
+        h3{
+            font-size: 2em;
+        }
+        p{
+            font-size: 1.55em;
+        }
+    }
+
+    .authorInfo{
+        p{
+            font-size: 1.5em;
+        }
+    }
+
+
+
+    // profiles
+
+    .profileFormSection{
+        label{
+            font-size: 1.75rem;
+        }
+
+        .doubleFields{
+            
+            input{
+                padding: 3%;
+                font-size: 1.5rem
+            }
+        }
+    }
+
+    
+
+    // profile display :
+
+    #profile{
+
+        .profileImg{
+            width: 40%;
+            padding-top: 40%;
+        }
+
+        .nameLocation{
+            #username{
+                font-size: 5rem;
+            }
+            #name{
+                font-size: 3rem;
+            }
+            #location{
+                font-size: 2rem;
+                padding: 1%;
+            }
+        }
+
+
+        .personalDetails{
+            
+
+            .status{
+                font-size: 2rem;
+            }
+
+            .experienceDesc{
+                font-size: 2rem;
+
+                h2{
+                    font-size: 2rem;
+                }
+            }
+
+            
+
+
+        }
+
+        .bio{
+            font-size: 2rem;
+            
+        }
+
+        .linksDisplay{
+
+            .linkDiv{
+
+                a{
+                    font-size: 1.75rem;
+                    padding: 1%;
+                    width: 30%;
+                    flex-grow: 1;
+
+                }
+            }
+        }
+
+        .workDisplay, .eduDisplay{
+            h2{
+                font-size: 2rem;
+
+                padding: 2% 0 1%;
+            }
+            h3{
+                font-size: 1.5rem;
+                padding: 0.5% 0 1%;
+            }
+        }
+
+        .skillsDisplay{
+
+            .skillsDiv{
+
+                .skills{
+                    font-size: 1.75rem;
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+}

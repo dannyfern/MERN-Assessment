@@ -1,0 +1,193 @@
+.filters {
+  border: 1px solid #75ACB4;
+  border-radius: 3px;
+  padding: 4%;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 85vw;
+  margin: 5% auto;
+  -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+.filters p {
+  margin: 0 0 2%;
+}
+
+.filters .Dropdown-root {
+  margin: 0 0 3%;
+}
+
+.filters .Dropdown-control, .filters .Dropdown-menu {
+  border: 1px solid #75ACB4;
+  border-radius: 3px;
+  padding: 0.25rem;
+  color: black;
+}
+
+.filters .Dropdown-control .Dropdown-option, .filters .Dropdown-menu .Dropdown-option {
+  color: black;
+  padding: 0.25rem;
+}
+
+.filters .Dropdown-control {
+  margin: 3% 0;
+}
+
+.filters .filterBtn {
+  margin-top: 4%;
+}
+
+.filters .filterBtn button {
+  background-color: #75ACB4;
+  color: white;
+  width: 100%;
+  border-radius: 3px;
+  border: none;
+  padding: 1% 0;
+  font-size: 1em;
+}
+
+#addPostDiv {
+  margin: 3% auto;
+  width: 30vw;
+}
+
+#addPostForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#addPostForm .addPostField {
+  width: 100%;
+  margin-bottom: 3%;
+}
+
+#addPostForm .addPostSubmit {
+  width: 10vw;
+  margin: 0 auto;
+}
+
+.posts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.postCard {
+  padding: 4%;
+  border: 1px solid #75ACB4;
+  margin: 4% auto;
+  width: 85vw;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+.postCard .titleLink {
+  text-decoration: none !important;
+}
+
+.postCard .titleLink .postTitle {
+  color: #75ACB4;
+  font-size: 1.75em;
+}
+
+.postCard .postInfo h5 {
+  font-weight: 500;
+  margin-top: 6%;
+  font-size: 1em;
+}
+
+.postCard .postInfo h3 {
+  font-weight: 300;
+  font-size: 1.5em;
+  margin-top: 3%;
+}
+
+.postCard .postInfo .upVotesDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.postCard .postInfo .upVotesDiv .upVotes {
+  color: #75ACB4;
+  font-weight: 700;
+  font-size: 1.25em;
+}
+
+.singlePostTitle {
+  background: rgba(117, 172, 180, 0.3);
+  padding: 15% 10%;
+}
+
+.singlePostTitle .singleTitleLink {
+  text-align: center;
+  text-decoration: none;
+}
+
+.singlePostTitle .singleTitleLink h1 {
+  color: black;
+  font-family: diazo-mvb-ex-cond, sans-serif;
+  font-weight: 100;
+}
+
+.singlePostInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.singlePostInfo h5 {
+  margin: 12% 0 2%;
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+.singlePostInfo h3 {
+  margin: 0 0 5%;
+  font-weight: 200;
+  font-size: 1.5em;
+}
+
+.singlePostInfo p {
+  margin: 3% 0;
+  font-size: 1.25em;
+  line-height: 1.5;
+}
+
+.authorInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin-top: 10%;
+}
+/*# sourceMappingURL=Posts.css.map */

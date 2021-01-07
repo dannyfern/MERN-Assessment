@@ -1,0 +1,166 @@
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+  .width70 {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .heading {
+    margin: 8%;
+  }
+  .headingFont {
+    font-size: 3rem;
+  }
+  .filterText {
+    font-size: 1.5rem;
+    margin-bottom: 3%;
+  }
+  .filters {
+    margin: 5% auto;
+    width: 85vw;
+  }
+  .filters .filterDropdowns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .filters .filterDropdowns .dropdownDiv {
+    width: 47%;
+  }
+  .filters p {
+    font-size: 1.5rem;
+  }
+  .filters .Dropdown-control, .filters .Dropdown-menu {
+    font-size: 1.5rem;
+  }
+  .filters .filterBtn {
+    font-size: 1.5rem;
+  }
+  .posts {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .posts .postCard {
+    -webkit-box-flex: 40%;
+        -ms-flex: 40%;
+            flex: 40%;
+    margin: 3% 3%;
+  }
+  .singlePostTitle {
+    padding: 10%;
+  }
+  .singlePostTitle .singleTitleLink h1 {
+    font-size: 3em;
+  }
+  .singlePostInfo #postDate {
+    font-size: 1.75em;
+  }
+  .singlePostInfo h3 {
+    font-size: 2em;
+  }
+  .singlePostInfo p {
+    font-size: 1.55em;
+  }
+  .authorInfo p {
+    font-size: 1.5em;
+  }
+  .profileFormSection label {
+    font-size: 1.75rem;
+  }
+  .profileFormSection .doubleFields input {
+    padding: 3%;
+    font-size: 1.5rem;
+  }
+  #profile .profileImg {
+    width: 40%;
+    padding-top: 40%;
+  }
+  #profile .nameLocation #username {
+    font-size: 5rem;
+  }
+  #profile .nameLocation #name {
+    font-size: 3rem;
+  }
+  #profile .nameLocation #location {
+    font-size: 2rem;
+    padding: 1%;
+  }
+  #profile .personalDetails .status {
+    font-size: 2rem;
+  }
+  #profile .personalDetails .experienceDesc {
+    font-size: 2rem;
+  }
+  #profile .personalDetails .experienceDesc h2 {
+    font-size: 2rem;
+  }
+  #profile .bio {
+    font-size: 2rem;
+  }
+  #profile .linksDisplay .linkDiv a {
+    font-size: 1.75rem;
+    padding: 1%;
+    width: 30%;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  #profile .workDisplay h2, #profile .eduDisplay h2 {
+    font-size: 2rem;
+    padding: 2% 0 1%;
+  }
+  #profile .workDisplay h3, #profile .eduDisplay h3 {
+    font-size: 1.5rem;
+    padding: 0.5% 0 1%;
+  }
+  #profile .skillsDisplay .skillsDiv .skills {
+    font-size: 1.75rem;
+  }
+}
+/*# sourceMappingURL=Tablet.css.map */

@@ -1,0 +1,295 @@
+@import "variables";
+
+@media only screen and (min-width: 780px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+
+    .heading{
+        margin: 5% !important;
+    }
+
+    .width70{
+        width: 70vw !important;
+        margin: 0 auto;
+    }
+
+    .nav-ul{
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    #navLinks{ 
+        display: flex;
+        justify-content: space-around;
+        
+        a{
+            color: white;
+            padding: 1.5% 0;
+        }
+        #logo{
+            font-family: diazo-mvb-ex-cond, sans-serif;
+            font-size: 1.5em;
+            padding: 1% 0 1%;
+        }
+    }
+
+
+    // filter posts
+    .filters{
+        width: 50vw !important;
+
+    }
+
+
+    // posts :
+    .width70{
+        .posts{
+            
+
+            .postCard{
+                padding: 2%;
+                margin: 3%;
+                flex: 20%;
+        
+                .titleLink{
+                    .postTitle{
+                        font-size: 1.35em;
+                        
+                    }
+                }
+
+                .postInfo{
+                    h5{
+                        font-size: 0.95em;
+                        margin-top: 4%;
+                    }
+                    h3{
+                        font-size: 1.25em;
+                    }
+                }
+            }
+        }
+    }
+
+    .singlePostTitle{
+        padding: 8% !important;
+        .singleTitleLink{
+            #postTitle{
+                font-size: 2em;
+            }
+        }
+    }
+
+    #postSections{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        margin-top: 5%;
+        
+
+        .singlePostInfo{
+            width: 40vw;
+            border-left: 1px solid black;
+            padding-left: 5%;
+
+
+            h5{
+                font-size: 1.25em;
+                margin: 0;
+            }
+
+            h3{
+                font-size: 1.5em;
+            }
+            p{
+                font-size: 1.25em;
+            }
+        }
+
+        .authorInfo{
+            margin: 0;
+            p{
+                font-size: 1.25em;
+            }
+        }
+    }
+
+
+
+
+    // profile displays :
+
+    #profile{
+
+        
+
+
+        .profileImgName{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5%;
+
+            
+
+            .profileImageDisplay{
+                width: 25%;
+                margin: 0 3% 0 0;
+                order: 2;
+
+                
+
+                .profileImg{
+                    width: 60%;
+                    padding-top: 60%;
+                }
+
+                .status-desktop{
+                    display: block;
+                    background-color: #d4ffc2;
+                    padding: 3%;
+                    text-align: center;
+                    width: 80%;
+                    margin: 3% auto 0;
+                }
+    
+            }
+
+
+
+            .nameLocation{
+                width: 25%;
+                margin: 0 3%;
+                order: 1;
+
+                #username{
+                    font-size: 3rem;
+                }
+                #name{
+                    font-size: 1.75rem;
+                }
+                #location{
+                    font-size: 1.5rem;
+                }
+            }
+
+            .personalDetails{
+                width: 20%;
+                margin: 0 3%;
+                order: 3;
+
+
+                
+
+                .status{
+                    display: none;
+                }
+                .experienceDesc{
+                    font-size: 1.25rem;
+                    padding: 7% 3%;
+                    background-color: #fff;
+                    border: 2px solid $green;
+                    border-radius: 3px;
+                    margin-top: 2%;
+
+                    .experienceLevel{
+                        padding-bottom: 5%;
+                    }
+
+                    h2{
+                        border-top: 2px solid $green;
+                        padding-top: 5%;
+                        font-size: 1.25rem
+                    }
+                }
+            }
+        }
+        
+
+        .bioAndLinks{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            // margin: 0 auto;
+
+            .bio{
+                font-size: 1.5rem;
+                width: 40%;
+                padding: 2% 4%;
+                margin: 0;
+            }
+
+            .linksDisplay{
+                width: 40%;
+                padding: 2% 4%;
+
+                .linkDiv{
+                    a{
+                        width: 30%;
+                        font-size: 1.25rem;
+                    }
+                }
+
+                
+            }
+        }
+
+        .workAndEdu{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            margin-top: 3%;
+
+            
+
+            .workDisplay{
+                padding: 2% 4%;
+                width: 40%;
+
+                background-color: rgba(117, 172, 180, 0.2);
+            }
+            .eduDisplay{
+                padding: 2% 4%;
+                width: 40%;
+
+                background-color: rgba(117, 172, 180, 0.2);
+            }
+        }
+
+        .skillsDisplay{
+            padding: 2% 4%;
+            width: 80%;
+            border: 2px solid $green;
+            border-radius: 3px;
+            margin: 3% auto;
+        }
+        
+
+    }
+    
+    
+
+    
+
+
+
+}

@@ -1,0 +1,98 @@
+
+// fonts : 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url("https://use.typekit.net/buj1oiz.css");
+
+// variables:
+@import "variables";
+
+// other files :
+// @import "Posts";
+// @import "Profile";
+
+
+.heading{
+    text-align: center;
+    margin: 8% 0;
+
+    h4{
+        font-size: 1.25rem;
+    }
+}
+
+.headingFont{
+    font-family: $dvb;
+    font-weight: 200;
+}
+
+.filterText{
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+*{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+#navbar{
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    background-color: $green;
+    // height: 10%;
+    width: 100vw;
+    text-align: center;
+
+    // padding: 1% 0;
+    a{
+        color: #000;
+        text-decoration: none;
+        
+    }
+
+    
+}
+
+
+.hamburger {
+    display: block;
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+    &:focus{
+        outline: none;
+    }
+    margin: 3.6% 0 3.5% 90%;
+}
+
+#navLinks {
+    width: 100%;
+}
+
+.closedNav{
+    display: none;
+}
+
+.openNav{
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color:#fff;
+    width: 100vw;
+    padding: 3%;
+    a{
+        font-size: 1.5em;
+        padding: 3%;
+    }
+    box-shadow: 0 15px 15px 1px rgba(0, 0, 0, 0.25)
+}
+

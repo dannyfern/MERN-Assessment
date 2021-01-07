@@ -1,0 +1,476 @@
+.navigationDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5%;
+}
+
+.nextBtn {
+  border: none;
+  border-radius: 3px;
+  background-color: #75ACB4;
+  color: #fff;
+  padding: 1%;
+  font-size: 1.25rem;
+  width: 85vw;
+  margin: 1%;
+}
+
+.profileFormDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.profileFormDiv .profilePhotoUpload {
+  text-align: center;
+  margin: 1.25rem;
+}
+
+.profileFormDiv .profilePhotoUpload #fileChosen {
+  margin-left: 3%;
+}
+
+.profileFormDiv .profilePhotoUpload label {
+  background-color: #75ACB4;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.profileFormDiv .skillsFormSection {
+  background-color: #f5f5f5;
+  padding: 6% 8%;
+}
+
+.profileFormDiv .skillsFormSection input {
+  border: 1px solid #75ACB4;
+  border-radius: 3px;
+  padding: 0.2rem;
+}
+
+.profileFormDiv .skillsFormSection .formFields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 3%;
+}
+
+.profileFormDiv .skillsFormSection .formFields input {
+  width: 100%;
+}
+
+.profileFormDiv .skillsFormSection .skillsDisplayInput .formFields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.profileFormDiv .skillsFormSection .skillsDisplayInput .formFields .skillsList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style-type: none;
+}
+
+.profileFormDiv .skillsFormSection .skillsDisplayInput .formFields .skillsList .skillItem {
+  padding-left: 100%;
+}
+
+.profileFormDiv .skillsFormSection .skillsDisplayInput .skillInputSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.profileFormDiv .skillsFormSection .skillsDisplayInput .skillInputSection .addBtn {
+  background-color: #75ACB4;
+  color: white;
+  border: none;
+  width: 20%;
+  margin-left: 3%;
+  border-radius: 3px;
+}
+
+.profileFormDiv .skillsFormSection .Dropdown-control, .profileFormDiv .skillsFormSection .Dropdown-menu {
+  border: 1px solid #75ACB4;
+  border-radius: 3px;
+  padding: 0.25rem;
+  color: black;
+}
+
+.profileFormDiv .skillsFormSection .Dropdown-control .Dropdown-option, .profileFormDiv .skillsFormSection .Dropdown-menu .Dropdown-option {
+  color: black;
+  padding: 0.25rem;
+}
+
+.profileFormDiv .skillsFormSection .Dropdown-control {
+  margin: 3% 0;
+}
+
+.profileFormDiv .profileFormSection {
+  background-color: #f5f5f5;
+  padding: 6% 8%;
+}
+
+.profileFormDiv .profileFormSection label {
+  font-weight: 500;
+}
+
+.profileFormDiv .profileFormSection input[type=text], .profileFormDiv .profileFormSection input[type=date] {
+  border: 1px solid #75ACB4;
+  border-radius: 3px;
+  padding: 0 0.4rem;
+  height: 2em;
+}
+
+.profileFormDiv .profileFormSection .doubleFields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.profileFormDiv .profileFormSection .doubleFields .formFields {
+  width: 48%;
+}
+
+.profileFormDiv .profileFormSection .formFields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 3%;
+}
+
+.profileFormDiv .profileFormSection .formFields .bio {
+  height: 20vh;
+  border: 1px solid #75ACB4;
+  border-radius: 3px;
+  resize: none;
+}
+
+.profileFormDiv .profileFormSection .formFields .description {
+  height: 10vh;
+  border: 1px solid #75ACB4;
+  border-radius: 3px;
+  resize: none;
+}
+
+.profileFormDiv .profileFormSection .interestsSection {
+  margin: 0 0 3%;
+}
+
+.profileFormDiv .profileFormSection .interestsSection .interestsCheckBoxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 2%;
+}
+
+.profileFormDiv .profileFormSection .interestsSection .interestsCheckBoxes .checkboxes {
+  width: 50%;
+  padding: 1% 0;
+}
+
+.profileFormDiv .profileFormSection .interestsSection .interestsCheckBoxes .checkboxes label {
+  padding-left: 5%;
+}
+
+.profileFormDiv .statusSelection h3 {
+  margin-bottom: 5%;
+}
+
+.profileFormDiv .statusSelection .statusRadio > * {
+  color: red;
+}
+
+.profileFormDiv .recentWork h3, .profileFormDiv .pastWork h3, .profileFormDiv .statusSelection h3 {
+  background-color: #f5f5f5;
+  padding: 6% 8%;
+}
+
+.profileFormDiv .recentWork .formFields, .profileFormDiv .pastWork .formFields, .profileFormDiv .statusSelection .formFields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 3%;
+  width: 48%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.profileFormDiv .recentWork .doubleFields, .profileFormDiv .pastWork .doubleFields, .profileFormDiv .statusSelection .doubleFields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.profileFormDiv .recentWork .doubleFields .formFields, .profileFormDiv .pastWork .doubleFields .formFields, .profileFormDiv .statusSelection .doubleFields .formFields {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+.profileFormDiv .recentWork .recentWorkInfo, .profileFormDiv .pastWork .recentWorkInfo, .profileFormDiv .statusSelection .recentWorkInfo {
+  padding: 6% 8%;
+}
+
+.profileFormDiv .recentWork .recentWorkInfo .plusButton, .profileFormDiv .pastWork .recentWorkInfo .plusButton, .profileFormDiv .statusSelection .recentWorkInfo .plusButton {
+  background-color: #75ACB4;
+  color: #fff;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  padding: 1%;
+  margin-top: 3%;
+}
+
+.profileFormDiv .recentWork input, .profileFormDiv .pastWork input, .profileFormDiv .statusSelection input {
+  border: 1px solid #75ACB4;
+  border-radius: 3px;
+  padding: 0 0.4rem;
+  height: 2em;
+}
+
+.profilePhoto {
+  background-color: #75ACB4;
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 10em;
+}
+
+.profilePhoto img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+#profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#profile .nameLocation {
+  text-align: center;
+}
+
+#profile .nameLocation #username {
+  font-family: diazo-mvb-ex-cond, sans-serif;
+  color: #75ACB4;
+  font-size: 3.5rem;
+  font-weight: 200;
+}
+
+#profile .nameLocation #name {
+  font-weight: 400;
+  font-size: 2rem;
+  padding: 1%;
+}
+
+#profile .nameLocation #location {
+  font-weight: 100;
+  font-size: 1.5rem;
+  padding: 2%;
+}
+
+#profile h1 {
+  font-weight: 600;
+}
+
+#profile .profileImageDisplay .status-desktop {
+  display: none;
+}
+
+#profile .profileImageDisplay .profileImg {
+  background-color: #f3f3f3;
+  width: 50%;
+  height: auto;
+  padding-top: 50%;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+#profile .personalDetails {
+  text-align: center;
+}
+
+#profile .personalDetails .status {
+  background-color: #d4ffc2;
+  padding: 3%;
+  margin-top: 3%;
+}
+
+#profile .personalDetails .experienceDesc {
+  background-color: rgba(117, 172, 180, 0.2);
+  margin-bottom: 2%;
+  padding: 3%;
+  font-size: 1.25rem;
+}
+
+#profile .personalDetails .experienceDesc h2 {
+  font-size: 1.25rem;
+  border-top: 5px solid #fff;
+  padding-top: 2%;
+  margin-top: 3%;
+}
+
+#profile .personalDetails .experienceDesc .bold {
+  font-weight: 600;
+}
+
+#profile .bio {
+  width: 70vw;
+  margin: 0 auto;
+  padding: 2% 0 4%;
+  text-align: center;
+}
+
+#profile .linksDisplay {
+  background-color: #f5f5f5;
+  padding: 5% 8%;
+}
+
+#profile .linksDisplay .linkDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  padding: 3%;
+}
+
+#profile .linksDisplay a {
+  color: #75ACB4;
+  width: 50%;
+  font-size: 1.25rem;
+  padding: 2%;
+}
+
+#profile .linksDisplay .links {
+  color: black;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+#profile .workDisplay, #profile .eduDisplay {
+  padding: 5% 8%;
+}
+
+#profile .workDisplay h2, #profile .eduDisplay h2 {
+  font-size: 1.75rem;
+  font-weight: 300;
+  padding: 2% 0 1%;
+}
+
+#profile .workDisplay h3, #profile .eduDisplay h3 {
+  font-weight: 200;
+  padding: 0.5% 0 6%;
+}
+
+#profile .eduDisplay {
+  background-color: #F3F3F3;
+}
+
+#profile .skillsDisplay {
+  padding: 5% 8%;
+}
+
+#profile .skillsDisplay .skillsDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 3% 0;
+}
+
+#profile .skillsDisplay .skillsDiv .skills {
+  border: 2px solid #75ACB4;
+  border-radius: 3px;
+  padding: 1% 5%;
+  margin: 1% 1%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
+}
+
+#profile .postsDisplay {
+  background-color: #F3F3F3;
+  padding: 5% 8%;
+}
+/*# sourceMappingURL=Profile.css.map */
